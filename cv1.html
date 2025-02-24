@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <title>Portfolio - Nhat Minh</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;/*header đứng yên khi cuộn trang*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 400px 200px;
+    /*margin-top: 200px;để trang không bị che*/
+}
+.background,.hero {
+    background: linear-gradient(to right, #d8c8b5 40%, white 40%);
+}
+
+.profile-card {
+    background: linear-gradient(to bottom, #f8ecdd 90%, white 90%);
+    padding: 50px 50px 10px 50px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 20px;
+    margin:10px ;
+}
+
+.intro {
+    margin-left: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid blue;
+}
+.primary:hover {
+    background: #f8f8f8;
+    color: #000;
+}
+
+.secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.secondary:hover {
+    background: blue;
+    color: white;
+    border: 2px solid blue ;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <p style="font-size: 20px;"><b>Nhat Minh</b> / PROJECT MANAGER</p>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="profile-card">
+            <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/448902314_455981150718025_1483775479418234382_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=111&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=nJGLpZ_YbxYQ7kNvgH6VRPo&_nc_oc=AdhzHoOVmyT6u4vgbc5z61653ChcfBomr2AHVnSy1v1lqlpXbtLzzLQafmnKgFjFJm_ppXZVPOD2Ph8i2Z6nJuyT&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=ADZbLYgn92JoJHXFglfyHnW&oh=00_AYAazY8wClPoq9t_VvL859ReFZpaKk9hHFWUh3ib5VpR-g&oe=67C236DF" alt="Nhat Minh">
+            <h2>Nhat Minh</h2>
+            <p>PROJECT MANAGER</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="background"></div>
+        <div class="intro">
+            <h1>Hello</h1>
+            <p>Here's who I am & what I do</p>
+            <button class="btn primary">RESUME</button>
+            <button class="btn secondary">PROJECTS</button>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+            <p>  I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2035 by Nhat Minh. Powered and secured by Wix</p>
+        <p>Call: 123-456-7890 | Write: info@mysite.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
